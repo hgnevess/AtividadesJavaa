@@ -1,15 +1,16 @@
 package Classes;
 
 public class Cilindro {
+
     public double raio;
     public double altura;
 
-    public Cilindro(double raio, double altura) {
-        this.raio = raio;
-        this.altura = altura;
+    public double raioElevado2 = raio*raio;
+    public double calcularVolume(){
+        return (3.14*raioElevado2)*altura;
     }
 
-    public double areaCilindro(){
-        return 2*Math.PI*raio*altura;
+    public double calcularArea(){
+        return 2*3.14*raio*(raio+altura);
     }
 }
